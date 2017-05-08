@@ -22,7 +22,7 @@ STM32L476RET6 | LQFP64 | 10x10mm | 512kB | 320kB | 2758825
 STM32L476RGT6 | LQFP64 | 10x10mm | 1024kB | 320kB | 2725138
  | | |  | | 
 STM32L476VET6 | LQFP100 | 14x14mm | 512kB | 320kB | 2758827
-STM32L476VT6 | LQFP100 | 14x14mm | 1024kB | 320kB | 2725139
+STM32L476VGT6 | LQFP100 | 14x14mm | 1024kB | 320kB | 2725139
 
 
 ___The parts are interchangeable if the guidelines of STM are followed.___
