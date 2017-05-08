@@ -5,6 +5,15 @@ By: `Roland van Straten`
 
 In this repo you will find some of the parts I have created for using with EAGLE.
 
+## WIFI2GO
+`WIFI2GO` is a module from [ImageCraft](http://imagecraft.com) that is available with different processor options. However the part in this library is the `STM32L411RCT6`. The board also has a Texas Instruments `CC3100` Wi-Fi chip and integrated antenna. Please refer to the website of Imagecraft for further information on availability and pricing.
+
+MODULE | SIZE | CPU | Flash | SRAM | WiFi
+----- | ----- | ----- | ----- | ----- | -----
+WIFI2GO | 46x36mm | STM32F411RCT6 | 256kB | 128kB | CC3100
+
+
+
 ## STM32L4xxx.lbr
 This file contains the following parts:
 
