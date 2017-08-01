@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.7.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;b&gt;EAGLE Library of Pycom OEM Modules&lt;/b&gt;
+
+&lt;p&gt;Created by Roland van Straten (git@rolandvs) on 30-07-2017, v1.9&lt;/p&gt;</description>
+<packages>
+<package name="L01_OEM">
+<description>&lt;b&gt;Pycom LoPy PCB Footprint&lt;/b&gt;</description>
+<smd name="GND@13" x="6.44" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@14" x="7.44" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@15" x="14.68" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@16" x="15.68" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@1" x="24.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="RST" x="25.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P0" x="26.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P1" x="27.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P2" x="28.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P3" x="29.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P4" x="30.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P5" x="31.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P6" x="32.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P7" x="33.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P8" x="34.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P9" x="35.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P10" x="36.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P11" x="37.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P12" x="38.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND" x="39.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@12" x="6.44" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@11" x="7.44" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@10" x="14.68" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@9" x="15.68" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="1V8" x="24.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@4" x="25.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="VDD33" x="26.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P23" x="27.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P22" x="28.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P21" x="29.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P20" x="30.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P19" x="31.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P18" x="32.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P17" x="33.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P16" x="34.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P15" x="35.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P14" x="36.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P13" x="37.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@3" x="38.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@2" x="39.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@6" x="42.245" y="5.22" dx="0.8" dy="1.85" layer="1" rot="R270"/>
+<smd name="ANT" x="42.245" y="6.22" dx="0.8" dy="1.85" layer="1" rot="R270"/>
+<smd name="GND@5" x="42.245" y="7.22" dx="0.8" dy="1.85" layer="1" rot="R270"/>
+<smd name="GND@8" x="0.425" y="6.137" dx="0.8" dy="1.85" layer="1" rot="R90"/>
+<smd name="ANT2" x="0.425" y="7.137" dx="0.8" dy="1.85" layer="1" rot="R90"/>
+<smd name="GND@7" x="0.425" y="8.134" dx="0.8" dy="1.85" layer="1" rot="R90"/>
+<wire x1="0" y1="17.65" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="42.67" y2="0" width="0.127" layer="21"/>
+<wire x1="42.67" y1="0" x2="42.67" y2="17.65" width="0.127" layer="21"/>
+<wire x1="42.67" y1="17.65" x2="0" y2="17.65" width="0.127" layer="21"/>
+<wire x1="0" y1="17.65" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="-0.1" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="42.67" y2="0" width="0.127" layer="51"/>
+<wire x1="42.67" y1="0" x2="42.67" y2="17.65" width="0.127" layer="51"/>
+<wire x1="42.67" y1="17.65" x2="0" y2="17.65" width="0.127" layer="51"/>
+<rectangle x1="6.04" y1="0" x2="6.84" y2="0.85" layer="51"/>
+<rectangle x1="7.04" y1="0" x2="7.84" y2="0.85" layer="51"/>
+<rectangle x1="14.28" y1="0" x2="15.08" y2="0.85" layer="51"/>
+<rectangle x1="15.28" y1="0" x2="16.08" y2="0.85" layer="51"/>
+<rectangle x1="23.73" y1="0" x2="24.53" y2="0.85" layer="51"/>
+<rectangle x1="24.73" y1="0" x2="25.53" y2="0.85" layer="51"/>
+<rectangle x1="25.73" y1="0" x2="26.53" y2="0.85" layer="51"/>
+<rectangle x1="26.73" y1="0" x2="27.53" y2="0.85" layer="51"/>
+<rectangle x1="27.73" y1="0" x2="28.53" y2="0.85" layer="51"/>
+<rectangle x1="28.73" y1="0" x2="29.53" y2="0.85" layer="51"/>
+<rectangle x1="29.73" y1="0" x2="30.53" y2="0.85" layer="51"/>
+<rectangle x1="30.73" y1="0" x2="31.53" y2="0.85" layer="51"/>
+<rectangle x1="31.73" y1="0" x2="32.53" y2="0.85" layer="51"/>
+<rectangle x1="32.73" y1="0" x2="33.53" y2="0.85" layer="51"/>
+<rectangle x1="33.73" y1="0" x2="34.53" y2="0.85" layer="51"/>
+<rectangle x1="34.73" y1="0" x2="35.53" y2="0.85" layer="51"/>
+<rectangle x1="35.73" y1="0" x2="36.53" y2="0.85" layer="51"/>
+<rectangle x1="36.73" y1="0" x2="37.53" y2="0.85" layer="51"/>
+<rectangle x1="37.73" y1="0" x2="38.53" y2="0.85" layer="51"/>
+<rectangle x1="38.73" y1="0" x2="39.53" y2="0.85" layer="51"/>
+<rectangle x1="6.04" y1="16.8" x2="6.84" y2="17.65" layer="51"/>
+<rectangle x1="7.04" y1="16.8" x2="7.84" y2="17.65" layer="51"/>
+<rectangle x1="14.28" y1="16.8" x2="15.08" y2="17.65" layer="51"/>
+<rectangle x1="15.28" y1="16.8" x2="16.08" y2="17.65" layer="51"/>
+<rectangle x1="23.73" y1="16.8" x2="24.53" y2="17.65" layer="51"/>
+<rectangle x1="24.73" y1="16.8" x2="25.53" y2="17.65" layer="51"/>
+<rectangle x1="25.73" y1="16.8" x2="26.53" y2="17.65" layer="51"/>
+<rectangle x1="26.73" y1="16.8" x2="27.53" y2="17.65" layer="51"/>
+<rectangle x1="27.73" y1="16.8" x2="28.53" y2="17.65" layer="51"/>
+<rectangle x1="28.73" y1="16.8" x2="29.53" y2="17.65" layer="51"/>
+<rectangle x1="29.73" y1="16.8" x2="30.53" y2="17.65" layer="51"/>
+<rectangle x1="30.73" y1="16.8" x2="31.53" y2="17.65" layer="51"/>
+<rectangle x1="31.73" y1="16.8" x2="32.53" y2="17.65" layer="51"/>
+<rectangle x1="32.73" y1="16.8" x2="33.53" y2="17.65" layer="51"/>
+<rectangle x1="33.73" y1="16.8" x2="34.53" y2="17.65" layer="51"/>
+<rectangle x1="34.73" y1="16.8" x2="35.53" y2="17.65" layer="51"/>
+<rectangle x1="35.73" y1="16.8" x2="36.53" y2="17.65" layer="51"/>
+<rectangle x1="36.73" y1="16.8" x2="37.53" y2="17.65" layer="51"/>
+<rectangle x1="37.73" y1="16.8" x2="38.53" y2="17.65" layer="51"/>
+<rectangle x1="38.73" y1="16.8" x2="39.53" y2="17.65" layer="51"/>
+<rectangle x1="0" y1="5.737" x2="0.85" y2="6.537" layer="51"/>
+<rectangle x1="0" y1="6.737" x2="0.85" y2="7.537" layer="51"/>
+<rectangle x1="0" y1="7.734" x2="0.85" y2="8.534" layer="51"/>
+<rectangle x1="41.82" y1="4.82" x2="42.67" y2="5.62" layer="51"/>
+<rectangle x1="41.82" y1="5.82" x2="42.67" y2="6.62" layer="51"/>
+<rectangle x1="41.82" y1="6.82" x2="42.67" y2="7.62" layer="51"/>
+<text x="-0.95" y="9.89" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="44.64" y="8.62" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="S01_OEM">
+<description>&lt;b&gt;Pycom SiPy PCB Footprint&lt;/b&gt;</description>
+<smd name="GND@13" x="6.44" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@14" x="7.44" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@15" x="14.68" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@16" x="15.68" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@1" x="24.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="RST" x="25.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P0" x="26.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P1" x="27.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P2" x="28.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P3" x="29.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P4" x="30.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P5" x="31.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P6" x="32.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P7" x="33.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P8" x="34.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P9" x="35.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P10" x="36.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P11" x="37.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P12" x="38.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND" x="39.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@12" x="6.44" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@11" x="7.44" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@10" x="14.68" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@9" x="15.68" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="1V8" x="24.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@4" x="25.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="VDD33" x="26.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P23" x="27.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P22" x="28.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P21" x="29.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P20" x="30.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P19" x="31.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P18" x="32.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P17" x="33.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P16" x="34.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P15" x="35.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P14" x="36.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P13" x="37.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@3" x="38.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@2" x="39.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@6" x="42.245" y="5.22" dx="0.8" dy="1.85" layer="1" rot="R270"/>
+<smd name="ANT" x="42.245" y="6.22" dx="0.8" dy="1.85" layer="1" rot="R270"/>
+<smd name="GND@5" x="42.245" y="7.22" dx="0.8" dy="1.85" layer="1" rot="R270"/>
+<smd name="GND@8" x="0.425" y="6.137" dx="0.8" dy="1.85" layer="1" rot="R90"/>
+<smd name="ANT2" x="0.425" y="7.137" dx="0.8" dy="1.85" layer="1" rot="R90"/>
+<smd name="GND@7" x="0.425" y="8.134" dx="0.8" dy="1.85" layer="1" rot="R90"/>
+<wire x1="0" y1="17.65" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="42.67" y2="0" width="0.127" layer="21"/>
+<wire x1="42.67" y1="0" x2="42.67" y2="17.65" width="0.127" layer="21"/>
+<wire x1="42.67" y1="17.65" x2="0" y2="17.65" width="0.127" layer="21"/>
+<wire x1="0" y1="17.65" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="-0.1" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="42.67" y2="0" width="0.127" layer="51"/>
+<wire x1="42.67" y1="0" x2="42.67" y2="17.65" width="0.127" layer="51"/>
+<wire x1="42.67" y1="17.65" x2="0" y2="17.65" width="0.127" layer="51"/>
+<rectangle x1="6.04" y1="0" x2="6.84" y2="0.85" layer="51"/>
+<rectangle x1="7.04" y1="0" x2="7.84" y2="0.85" layer="51"/>
+<rectangle x1="14.28" y1="0" x2="15.08" y2="0.85" layer="51"/>
+<rectangle x1="15.28" y1="0" x2="16.08" y2="0.85" layer="51"/>
+<rectangle x1="23.73" y1="0" x2="24.53" y2="0.85" layer="51"/>
+<rectangle x1="24.73" y1="0" x2="25.53" y2="0.85" layer="51"/>
+<rectangle x1="25.73" y1="0" x2="26.53" y2="0.85" layer="51"/>
+<rectangle x1="26.73" y1="0" x2="27.53" y2="0.85" layer="51"/>
+<rectangle x1="27.73" y1="0" x2="28.53" y2="0.85" layer="51"/>
+<rectangle x1="28.73" y1="0" x2="29.53" y2="0.85" layer="51"/>
+<rectangle x1="29.73" y1="0" x2="30.53" y2="0.85" layer="51"/>
+<rectangle x1="30.73" y1="0" x2="31.53" y2="0.85" layer="51"/>
+<rectangle x1="31.73" y1="0" x2="32.53" y2="0.85" layer="51"/>
+<rectangle x1="32.73" y1="0" x2="33.53" y2="0.85" layer="51"/>
+<rectangle x1="33.73" y1="0" x2="34.53" y2="0.85" layer="51"/>
+<rectangle x1="34.73" y1="0" x2="35.53" y2="0.85" layer="51"/>
+<rectangle x1="35.73" y1="0" x2="36.53" y2="0.85" layer="51"/>
+<rectangle x1="36.73" y1="0" x2="37.53" y2="0.85" layer="51"/>
+<rectangle x1="37.73" y1="0" x2="38.53" y2="0.85" layer="51"/>
+<rectangle x1="38.73" y1="0" x2="39.53" y2="0.85" layer="51"/>
+<rectangle x1="6.04" y1="16.8" x2="6.84" y2="17.65" layer="51"/>
+<rectangle x1="7.04" y1="16.8" x2="7.84" y2="17.65" layer="51"/>
+<rectangle x1="14.28" y1="16.8" x2="15.08" y2="17.65" layer="51"/>
+<rectangle x1="15.28" y1="16.8" x2="16.08" y2="17.65" layer="51"/>
+<rectangle x1="23.73" y1="16.8" x2="24.53" y2="17.65" layer="51"/>
+<rectangle x1="24.73" y1="16.8" x2="25.53" y2="17.65" layer="51"/>
+<rectangle x1="25.73" y1="16.8" x2="26.53" y2="17.65" layer="51"/>
+<rectangle x1="26.73" y1="16.8" x2="27.53" y2="17.65" layer="51"/>
+<rectangle x1="27.73" y1="16.8" x2="28.53" y2="17.65" layer="51"/>
+<rectangle x1="28.73" y1="16.8" x2="29.53" y2="17.65" layer="51"/>
+<rectangle x1="29.73" y1="16.8" x2="30.53" y2="17.65" layer="51"/>
+<rectangle x1="30.73" y1="16.8" x2="31.53" y2="17.65" layer="51"/>
+<rectangle x1="31.73" y1="16.8" x2="32.53" y2="17.65" layer="51"/>
+<rectangle x1="32.73" y1="16.8" x2="33.53" y2="17.65" layer="51"/>
+<rectangle x1="33.73" y1="16.8" x2="34.53" y2="17.65" layer="51"/>
+<rectangle x1="34.73" y1="16.8" x2="35.53" y2="17.65" layer="51"/>
+<rectangle x1="35.73" y1="16.8" x2="36.53" y2="17.65" layer="51"/>
+<rectangle x1="36.73" y1="16.8" x2="37.53" y2="17.65" layer="51"/>
+<rectangle x1="37.73" y1="16.8" x2="38.53" y2="17.65" layer="51"/>
+<rectangle x1="38.73" y1="16.8" x2="39.53" y2="17.65" layer="51"/>
+<rectangle x1="0" y1="5.737" x2="0.85" y2="6.537" layer="51"/>
+<rectangle x1="0" y1="6.737" x2="0.85" y2="7.537" layer="51"/>
+<rectangle x1="0" y1="7.734" x2="0.85" y2="8.534" layer="51"/>
+<rectangle x1="41.82" y1="4.82" x2="42.67" y2="5.62" layer="51"/>
+<rectangle x1="41.82" y1="5.82" x2="42.67" y2="6.62" layer="51"/>
+<rectangle x1="41.82" y1="6.82" x2="42.67" y2="7.62" layer="51"/>
+<text x="-0.95" y="9.89" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="44.64" y="8.62" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="G01_OEM">
+<description>&lt;b&gt;Pycom GPy PCB Footprint&lt;/b&gt;</description>
+<smd name="GND@13" x="6.44" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@14" x="7.44" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@15" x="14.68" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@16" x="15.68" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@1" x="24.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="RST" x="25.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P0" x="26.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P1" x="27.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P2" x="28.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P3" x="29.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P4" x="30.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P5" x="31.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P6" x="32.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P7" x="33.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P8" x="34.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P9" x="35.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P10" x="36.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P11" x="37.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P12" x="38.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND" x="39.13" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@12" x="6.44" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@11" x="7.44" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@10" x="14.68" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@9" x="15.68" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="1V8" x="24.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@4" x="25.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="VDD33" x="26.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P23" x="27.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P22" x="28.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P21" x="29.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P20" x="30.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P19" x="31.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P18" x="32.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P17" x="33.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P16" x="34.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P15" x="35.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P14" x="36.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P13" x="37.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@3" x="38.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@2" x="39.13" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@6" x="42.245" y="5.22" dx="0.8" dy="1.85" layer="1" rot="R270"/>
+<smd name="ANT" x="42.245" y="6.22" dx="0.8" dy="1.85" layer="1" rot="R270"/>
+<smd name="GND@5" x="42.245" y="7.22" dx="0.8" dy="1.85" layer="1" rot="R270"/>
+<smd name="GND@8" x="0.425" y="6.137" dx="0.8" dy="1.85" layer="1" rot="R90"/>
+<smd name="ANT2" x="0.425" y="7.137" dx="0.8" dy="1.85" layer="1" rot="R90"/>
+<smd name="GND@7" x="0.425" y="8.134" dx="0.8" dy="1.85" layer="1" rot="R90"/>
+<wire x1="0" y1="17.65" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="42.67" y2="0" width="0.127" layer="21"/>
+<wire x1="42.67" y1="0" x2="42.67" y2="17.65" width="0.127" layer="21"/>
+<wire x1="42.67" y1="17.65" x2="0" y2="17.65" width="0.127" layer="21"/>
+<wire x1="0" y1="17.65" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="42.67" y2="0" width="0.127" layer="51"/>
+<wire x1="42.67" y1="0" x2="42.67" y2="17.65" width="0.127" layer="51"/>
+<wire x1="42.67" y1="17.65" x2="0" y2="17.65" width="0.127" layer="51"/>
+<rectangle x1="6.04" y1="0" x2="6.84" y2="0.85" layer="51"/>
+<rectangle x1="7.04" y1="0" x2="7.84" y2="0.85" layer="51"/>
+<rectangle x1="14.28" y1="0" x2="15.08" y2="0.85" layer="51"/>
+<rectangle x1="15.28" y1="0" x2="16.08" y2="0.85" layer="51"/>
+<rectangle x1="23.73" y1="0" x2="24.53" y2="0.85" layer="51"/>
+<rectangle x1="24.73" y1="0" x2="25.53" y2="0.85" layer="51"/>
+<rectangle x1="25.73" y1="0" x2="26.53" y2="0.85" layer="51"/>
+<rectangle x1="26.73" y1="0" x2="27.53" y2="0.85" layer="51"/>
+<rectangle x1="27.73" y1="0" x2="28.53" y2="0.85" layer="51"/>
+<rectangle x1="28.73" y1="0" x2="29.53" y2="0.85" layer="51"/>
+<rectangle x1="29.73" y1="0" x2="30.53" y2="0.85" layer="51"/>
+<rectangle x1="30.73" y1="0" x2="31.53" y2="0.85" layer="51"/>
+<rectangle x1="31.73" y1="0" x2="32.53" y2="0.85" layer="51"/>
+<rectangle x1="32.73" y1="0" x2="33.53" y2="0.85" layer="51"/>
+<rectangle x1="33.73" y1="0" x2="34.53" y2="0.85" layer="51"/>
+<rectangle x1="34.73" y1="0" x2="35.53" y2="0.85" layer="51"/>
+<rectangle x1="35.73" y1="0" x2="36.53" y2="0.85" layer="51"/>
+<rectangle x1="36.73" y1="0" x2="37.53" y2="0.85" layer="51"/>
+<rectangle x1="37.73" y1="0" x2="38.53" y2="0.85" layer="51"/>
+<rectangle x1="38.73" y1="0" x2="39.53" y2="0.85" layer="51"/>
+<rectangle x1="6.04" y1="16.8" x2="6.84" y2="17.65" layer="51"/>
+<rectangle x1="7.04" y1="16.8" x2="7.84" y2="17.65" layer="51"/>
+<rectangle x1="14.28" y1="16.8" x2="15.08" y2="17.65" layer="51"/>
+<rectangle x1="15.28" y1="16.8" x2="16.08" y2="17.65" layer="51"/>
+<rectangle x1="23.73" y1="16.8" x2="24.53" y2="17.65" layer="51"/>
+<rectangle x1="24.73" y1="16.8" x2="25.53" y2="17.65" layer="51"/>
+<rectangle x1="25.73" y1="16.8" x2="26.53" y2="17.65" layer="51"/>
+<rectangle x1="26.73" y1="16.8" x2="27.53" y2="17.65" layer="51"/>
+<rectangle x1="27.73" y1="16.8" x2="28.53" y2="17.65" layer="51"/>
+<rectangle x1="28.73" y1="16.8" x2="29.53" y2="17.65" layer="51"/>
+<rectangle x1="29.73" y1="16.8" x2="30.53" y2="17.65" layer="51"/>
+<rectangle x1="30.73" y1="16.8" x2="31.53" y2="17.65" layer="51"/>
+<rectangle x1="31.73" y1="16.8" x2="32.53" y2="17.65" layer="51"/>
+<rectangle x1="32.73" y1="16.8" x2="33.53" y2="17.65" layer="51"/>
+<rectangle x1="33.73" y1="16.8" x2="34.53" y2="17.65" layer="51"/>
+<rectangle x1="34.73" y1="16.8" x2="35.53" y2="17.65" layer="51"/>
+<rectangle x1="35.73" y1="16.8" x2="36.53" y2="17.65" layer="51"/>
+<rectangle x1="36.73" y1="16.8" x2="37.53" y2="17.65" layer="51"/>
+<rectangle x1="37.73" y1="16.8" x2="38.53" y2="17.65" layer="51"/>
+<rectangle x1="38.73" y1="16.8" x2="39.53" y2="17.65" layer="51"/>
+<rectangle x1="0" y1="5.737" x2="0.85" y2="6.537" layer="51"/>
+<rectangle x1="0" y1="6.737" x2="0.85" y2="7.537" layer="51"/>
+<rectangle x1="0" y1="7.734" x2="0.85" y2="8.534" layer="51"/>
+<rectangle x1="41.82" y1="4.82" x2="42.67" y2="5.62" layer="51"/>
+<rectangle x1="41.82" y1="5.82" x2="42.67" y2="6.62" layer="51"/>
+<rectangle x1="41.82" y1="6.82" x2="42.67" y2="7.62" layer="51"/>
+<text x="-0.95" y="9.89" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="44.64" y="8.62" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<smd name="+5V" x="2.82" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND@17" x="2.82" y="0.425" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="VSIM" x="10.56" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="SIM_RESET" x="11.56" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="SIM_CLK" x="10.56" y="0.425" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="SIM_DATA" x="11.56" y="0.425" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<rectangle x1="2.42" y1="16.8" x2="3.22" y2="17.64" layer="51"/>
+<rectangle x1="10.16" y1="16.79" x2="10.96" y2="17.64" layer="51"/>
+<rectangle x1="11.16" y1="16.79" x2="11.96" y2="17.64" layer="51"/>
+<rectangle x1="2.42" y1="0" x2="3.22" y2="0.85" layer="51"/>
+<rectangle x1="10.16" y1="0.01" x2="10.96" y2="0.86" layer="51"/>
+<rectangle x1="11.16" y1="0.01" x2="11.96" y2="0.86" layer="51"/>
+</package>
+<package name="W01_OEM">
+<description>&lt;b&gt;Pycom WiPy PCB Footprint&lt;/b&gt;</description>
+<smd name="GND@1" x="18.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="RST" x="17.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P0" x="16.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P1" x="15.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P2" x="14.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P3" x="13.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P4" x="12.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P5" x="11.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P6" x="10.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P7" x="9.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P8" x="8.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P9" x="7.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P10" x="6.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P11" x="5.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="P12" x="4.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="GND" x="3.54" y="17.225" dx="0.8" dy="1.85" layer="1" rot="R180"/>
+<smd name="1V8" x="18.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@4" x="17.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="VDD33" x="16.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P23" x="15.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P22" x="14.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P21" x="13.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P20" x="12.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P19" x="11.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P18" x="10.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P17" x="9.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P16" x="8.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P15" x="7.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P14" x="6.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="P13" x="5.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@3" x="4.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@2" x="3.54" y="0.425" dx="0.8" dy="1.85" layer="1"/>
+<smd name="GND@6" x="0.425" y="12.43" dx="0.8" dy="1.85" layer="1" rot="R90"/>
+<smd name="ANT" x="0.425" y="11.43" dx="0.8" dy="1.85" layer="1" rot="R90"/>
+<smd name="GND@5" x="0.425" y="10.43" dx="0.8" dy="1.85" layer="1" rot="R90"/>
+<wire x1="21.5" y1="0" x2="21.5" y2="17.65" width="0.127" layer="21"/>
+<wire x1="21.5" y1="17.65" x2="0" y2="17.65" width="0.127" layer="21"/>
+<wire x1="0" y1="17.65" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="21.5" y1="0" x2="21.5" y2="17.65" width="0.127" layer="51"/>
+<wire x1="21.5" y1="17.65" x2="0" y2="17.65" width="0.127" layer="51"/>
+<wire x1="0" y1="17.65" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="21.5" y2="0" width="0.127" layer="51"/>
+<rectangle x1="18.15" y1="16.78" x2="18.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="17.15" y1="16.78" x2="17.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="16.15" y1="16.78" x2="16.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="15.15" y1="16.78" x2="15.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="14.15" y1="16.78" x2="14.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="13.15" y1="16.78" x2="13.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="12.15" y1="16.78" x2="12.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="11.15" y1="16.78" x2="11.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="10.15" y1="16.78" x2="10.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="9.15" y1="16.78" x2="9.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="8.15" y1="16.78" x2="8.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="7.15" y1="16.78" x2="7.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="6.15" y1="16.78" x2="6.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="5.15" y1="16.78" x2="5.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="4.15" y1="16.78" x2="4.95" y2="17.63" layer="51" rot="R180"/>
+<rectangle x1="3.15" y1="16.78" x2="3.95" y2="17.63" layer="21" rot="R180"/>
+<rectangle x1="18.15" y1="-0.02" x2="18.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="17.15" y1="-0.02" x2="17.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="16.15" y1="-0.02" x2="16.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="15.15" y1="-0.02" x2="15.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="14.15" y1="-0.02" x2="14.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="13.15" y1="-0.02" x2="13.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="12.15" y1="-0.02" x2="12.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="11.15" y1="-0.02" x2="11.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="10.15" y1="-0.02" x2="10.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="9.15" y1="-0.02" x2="9.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="8.15" y1="-0.02" x2="8.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="7.15" y1="-0.02" x2="7.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="6.15" y1="-0.02" x2="6.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="5.15" y1="-0.02" x2="5.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="4.15" y1="-0.02" x2="4.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="3.15" y1="-0.02" x2="3.95" y2="0.83" layer="51" rot="R180"/>
+<rectangle x1="0.01" y1="12.01" x2="0.86" y2="12.81" layer="51" rot="R180"/>
+<rectangle x1="0.01" y1="11.01" x2="0.86" y2="11.81" layer="51" rot="R180"/>
+<rectangle x1="0.01" y1="10.01" x2="0.86" y2="10.81" layer="51" rot="R180"/>
+<text x="22.45" y="7.71" size="1.27" layer="25" rot="R270">&gt;NAME</text>
+<text x="-1.96" y="9.01" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="21.5" y2="0" width="0.127" layer="21"/>
+<circle x="3.8" y="14.3" radius="0.67081875" width="0.127" layer="21"/>
+<circle x="18.2" y="3.8" radius="0.67081875" width="0.127" layer="21"/>
+<circle x="3.8" y="14.3" radius="0.67081875" width="0.127" layer="51"/>
+<circle x="18.2" y="3.8" radius="0.67081875" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="W01">
+<description>&lt;b&gt;Pycom W01 OEM Module w/ dual Bluetooth and WiFi based upon ESP32 from Espressif&lt;/b&gt;
+
+&lt;p&gt;
+&lt;a href=https://docs.pycom.io/chapter/datasheets/oem/w01.html&gt;DOCUMENTATION&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;Created by Roland van Straten, 30-07-2017, v1.0&lt;/p&gt;</description>
+<pin name="GND" x="40.64" y="-5.08" length="middle" rot="R180"/>
+<pin name="P12" x="40.64" y="-7.62" length="middle" rot="R180"/>
+<pin name="P11" x="40.64" y="-10.16" length="middle" rot="R180"/>
+<pin name="P10" x="40.64" y="-12.7" length="middle" rot="R180"/>
+<pin name="P9" x="40.64" y="-15.24" length="middle" rot="R180"/>
+<pin name="P8" x="40.64" y="-17.78" length="middle" rot="R180"/>
+<pin name="P7" x="40.64" y="-20.32" length="middle" rot="R180"/>
+<pin name="P6" x="40.64" y="-22.86" length="middle" rot="R180"/>
+<pin name="P5" x="40.64" y="-25.4" length="middle" rot="R180"/>
+<pin name="P4" x="40.64" y="-27.94" length="middle" rot="R180"/>
+<pin name="P3" x="40.64" y="-30.48" length="middle" rot="R180"/>
+<pin name="P2" x="40.64" y="-33.02" length="middle" rot="R180"/>
+<pin name="P1" x="40.64" y="-35.56" length="middle" rot="R180"/>
+<pin name="P0" x="40.64" y="-38.1" length="middle" rot="R180"/>
+<pin name="RST" x="40.64" y="-40.64" length="middle" rot="R180"/>
+<pin name="GND@1" x="40.64" y="-43.18" length="middle" rot="R180"/>
+<pin name="GND@2" x="-5.08" y="-5.08" length="middle"/>
+<pin name="GND@3" x="-5.08" y="-7.62" length="middle"/>
+<pin name="P13" x="-5.08" y="-10.16" length="middle"/>
+<pin name="P14" x="-5.08" y="-12.7" length="middle"/>
+<pin name="P15" x="-5.08" y="-15.24" length="middle"/>
+<pin name="P16" x="-5.08" y="-17.78" length="middle"/>
+<pin name="P17" x="-5.08" y="-20.32" length="middle"/>
+<pin name="P18" x="-5.08" y="-22.86" length="middle"/>
+<pin name="P19" x="-5.08" y="-25.4" length="middle"/>
+<pin name="P20" x="-5.08" y="-27.94" length="middle"/>
+<pin name="P21" x="-5.08" y="-30.48" length="middle"/>
+<pin name="P22" x="-5.08" y="-33.02" length="middle"/>
+<pin name="P23" x="-5.08" y="-35.56" length="middle"/>
+<pin name="VDD33" x="-5.08" y="-38.1" length="middle"/>
+<pin name="GND@4" x="-5.08" y="-40.64" length="middle"/>
+<pin name="1V8" x="-5.08" y="-43.18" length="middle"/>
+<wire x1="0" y1="-48.26" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="35.56" y1="0" x2="35.56" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-48.26" x2="0" y2="-48.26" width="0.254" layer="94"/>
+<pin name="GND@5" x="20.32" y="5.08" length="middle" rot="R270"/>
+<pin name="ANT" x="22.86" y="5.08" length="middle" rot="R270"/>
+<pin name="GND@6" x="25.4" y="5.08" length="middle" rot="R270"/>
+<text x="12.7" y="-50.8" size="1.778" layer="95">&gt;NAME</text>
+<text x="12.7" y="-53.34" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="L01">
+<description>&lt;b&gt;Pycom L01 OEM Module w/ LoRa, dual Bluetooth and WiFi based upon ESP32 from Espressif&lt;/b&gt;
+
+&lt;p&gt;
+&lt;a href=https://docs.pycom.io/chapter/datasheets/oem/L01.html&gt;DOCUMENTATION&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;Created by Roland van Straten, 30-07-2017, v1.0&lt;/p&gt;</description>
+<pin name="GND" x="40.64" y="-5.08" length="middle" rot="R180"/>
+<pin name="P12" x="40.64" y="-7.62" length="middle" rot="R180"/>
+<pin name="P11" x="40.64" y="-10.16" length="middle" rot="R180"/>
+<pin name="P10" x="40.64" y="-12.7" length="middle" rot="R180"/>
+<pin name="P9" x="40.64" y="-15.24" length="middle" rot="R180"/>
+<pin name="P8" x="40.64" y="-17.78" length="middle" rot="R180"/>
+<pin name="P7/NC" x="40.64" y="-20.32" length="middle" rot="R180"/>
+<pin name="P6/NC" x="40.64" y="-22.86" length="middle" rot="R180"/>
+<pin name="P5/NC" x="40.64" y="-25.4" length="middle" rot="R180"/>
+<pin name="P4" x="40.64" y="-27.94" length="middle" rot="R180"/>
+<pin name="P3" x="40.64" y="-30.48" length="middle" rot="R180"/>
+<pin name="P2" x="40.64" y="-33.02" length="middle" rot="R180"/>
+<pin name="P1" x="40.64" y="-35.56" length="middle" rot="R180"/>
+<pin name="P0" x="40.64" y="-38.1" length="middle" rot="R180"/>
+<pin name="RST" x="40.64" y="-40.64" length="middle" rot="R180"/>
+<pin name="GND@1" x="40.64" y="-43.18" length="middle" rot="R180"/>
+<pin name="GND@2" x="-5.08" y="-5.08" length="middle"/>
+<pin name="GND@3" x="-5.08" y="-7.62" length="middle"/>
+<pin name="P13" x="-5.08" y="-10.16" length="middle"/>
+<pin name="P14" x="-5.08" y="-12.7" length="middle"/>
+<pin name="P15" x="-5.08" y="-15.24" length="middle"/>
+<pin name="P16" x="-5.08" y="-17.78" length="middle"/>
+<pin name="P17" x="-5.08" y="-20.32" length="middle"/>
+<pin name="P18" x="-5.08" y="-22.86" length="middle"/>
+<pin name="P19" x="-5.08" y="-25.4" length="middle"/>
+<pin name="P20" x="-5.08" y="-27.94" length="middle"/>
+<pin name="P21" x="-5.08" y="-30.48" length="middle"/>
+<pin name="P22" x="-5.08" y="-33.02" length="middle"/>
+<pin name="P23" x="-5.08" y="-35.56" length="middle"/>
+<pin name="VDD33" x="-5.08" y="-38.1" length="middle"/>
+<pin name="GND@4" x="-5.08" y="-40.64" length="middle"/>
+<pin name="1V8" x="-5.08" y="-43.18" length="middle"/>
+<wire x1="0" y1="-48.26" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="35.56" y1="0" x2="35.56" y2="-48.26" width="0.254" layer="94"/>
+<pin name="GND@5" x="20.32" y="5.08" length="middle" rot="R270"/>
+<pin name="ANT" x="22.86" y="5.08" length="middle" rot="R270"/>
+<pin name="GND@6" x="25.4" y="5.08" length="middle" rot="R270"/>
+<text x="1.524" y="1.016" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-81.28" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="-48.26" x2="35.56" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-48.26" x2="35.56" y2="-78.74" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-78.74" x2="0" y2="-78.74" width="0.254" layer="94"/>
+<wire x1="0" y1="-78.74" x2="0" y2="-48.26" width="0.254" layer="94"/>
+<pin name="ANT2" x="20.32" y="-83.82" length="middle" rot="R90"/>
+<pin name="GND@8" x="22.86" y="-83.82" length="middle" rot="R90"/>
+<pin name="GND@7" x="17.78" y="-83.82" length="middle" rot="R90"/>
+<pin name="GND@16" x="40.64" y="-50.8" length="middle" rot="R180"/>
+<pin name="GND@15" x="40.64" y="-53.34" length="middle" rot="R180"/>
+<pin name="GND@14" x="40.64" y="-66.04" length="middle" rot="R180"/>
+<pin name="GND@13" x="40.64" y="-68.58" length="middle" rot="R180"/>
+<pin name="GND@12" x="-5.08" y="-68.58" length="middle"/>
+<pin name="GND@11" x="-5.08" y="-66.04" length="middle"/>
+<pin name="GND@10" x="-5.08" y="-53.34" length="middle"/>
+<pin name="GND@9" x="-5.08" y="-50.8" length="middle"/>
+</symbol>
+<symbol name="G01">
+<description>&lt;b&gt;Pycom G01 OEM Module w/ LTE CAT M1/NB1, dual Bluetooth and WiFi based upon ESP32 from Espressif&lt;/b&gt;
+
+&lt;p&gt;
+&lt;a href=https://docs.pycom.io/chapter/datasheets/oem/G01.html&gt;DOCUMENTATION&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;Created by Roland van Straten, 30-07-2017, v1.0&lt;/p&gt;</description>
+<pin name="GND" x="40.64" y="-5.08" length="middle" rot="R180"/>
+<pin name="P12" x="40.64" y="-7.62" length="middle" rot="R180"/>
+<pin name="P11" x="40.64" y="-10.16" length="middle" rot="R180"/>
+<pin name="P10" x="40.64" y="-12.7" length="middle" rot="R180"/>
+<pin name="P9" x="40.64" y="-15.24" length="middle" rot="R180"/>
+<pin name="P8" x="40.64" y="-17.78" length="middle" rot="R180"/>
+<pin name="P7/NC" x="40.64" y="-20.32" length="middle" rot="R180"/>
+<pin name="P6/NC" x="40.64" y="-22.86" length="middle" rot="R180"/>
+<pin name="P5/NC" x="40.64" y="-25.4" length="middle" rot="R180"/>
+<pin name="P4" x="40.64" y="-27.94" length="middle" rot="R180"/>
+<pin name="P3" x="40.64" y="-30.48" length="middle" rot="R180"/>
+<pin name="P2" x="40.64" y="-33.02" length="middle" rot="R180"/>
+<pin name="P1" x="40.64" y="-35.56" length="middle" rot="R180"/>
+<pin name="P0" x="40.64" y="-38.1" length="middle" rot="R180"/>
+<pin name="RST" x="40.64" y="-40.64" length="middle" rot="R180"/>
+<pin name="GND@1" x="40.64" y="-43.18" length="middle" rot="R180"/>
+<pin name="GND@2" x="-5.08" y="-5.08" length="middle"/>
+<pin name="GND@3" x="-5.08" y="-7.62" length="middle"/>
+<pin name="P13" x="-5.08" y="-10.16" length="middle"/>
+<pin name="P14" x="-5.08" y="-12.7" length="middle"/>
+<pin name="P15" x="-5.08" y="-15.24" length="middle"/>
+<pin name="P16" x="-5.08" y="-17.78" length="middle"/>
+<pin name="P17" x="-5.08" y="-20.32" length="middle"/>
+<pin name="P18" x="-5.08" y="-22.86" length="middle"/>
+<pin name="P19" x="-5.08" y="-25.4" length="middle"/>
+<pin name="P20" x="-5.08" y="-27.94" length="middle"/>
+<pin name="P21" x="-5.08" y="-30.48" length="middle"/>
+<pin name="P22" x="-5.08" y="-33.02" length="middle"/>
+<pin name="P23" x="-5.08" y="-35.56" length="middle"/>
+<pin name="VDD33" x="-5.08" y="-38.1" length="middle"/>
+<pin name="GND@4" x="-5.08" y="-40.64" length="middle"/>
+<pin name="1V8" x="-5.08" y="-43.18" length="middle"/>
+<wire x1="0" y1="-48.26" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="35.56" y1="0" x2="35.56" y2="-48.26" width="0.254" layer="94"/>
+<pin name="GND@5" x="20.32" y="5.08" length="middle" rot="R270"/>
+<pin name="ANT" x="22.86" y="5.08" length="middle" rot="R270"/>
+<pin name="GND@6" x="25.4" y="5.08" length="middle" rot="R270"/>
+<text x="1.524" y="1.016" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-81.28" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="-48.26" x2="35.56" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-48.26" x2="35.56" y2="-78.74" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-78.74" x2="0" y2="-78.74" width="0.254" layer="94"/>
+<wire x1="0" y1="-78.74" x2="0" y2="-48.26" width="0.254" layer="94"/>
+<pin name="ANT2" x="20.32" y="-83.82" length="middle" rot="R90"/>
+<pin name="GND@8" x="22.86" y="-83.82" length="middle" rot="R90"/>
+<pin name="GND@7" x="17.78" y="-83.82" length="middle" rot="R90"/>
+<pin name="GND@16" x="40.64" y="-50.8" length="middle" rot="R180"/>
+<pin name="GND@15" x="40.64" y="-53.34" length="middle" rot="R180"/>
+<pin name="GND@14" x="40.64" y="-66.04" length="middle" rot="R180"/>
+<pin name="GND@13" x="40.64" y="-68.58" length="middle" rot="R180"/>
+<pin name="GND@12" x="-5.08" y="-68.58" length="middle"/>
+<pin name="GND@11" x="-5.08" y="-66.04" length="middle"/>
+<pin name="GND@10" x="-5.08" y="-53.34" length="middle"/>
+<pin name="GND@9" x="-5.08" y="-50.8" length="middle"/>
+<pin name="SIM_RESET" x="-5.08" y="-58.42" length="middle"/>
+<pin name="VSIM" x="-5.08" y="-60.96" length="middle"/>
+<pin name="+5V" x="-5.08" y="-73.66" length="middle"/>
+<pin name="GND@17" x="40.64" y="-73.66" length="middle" rot="R180"/>
+<pin name="SIM_CLK" x="40.64" y="-60.96" length="middle" rot="R180"/>
+<pin name="SIM_DATA" x="40.64" y="-58.42" length="middle" rot="R180"/>
+</symbol>
+<symbol name="S01">
+<description>&lt;b&gt;Pycom S01 OEM Module w/ Sigfox, dual Bluetooth and WiFi based upon ESP32 from Espressif&lt;/b&gt;
+
+&lt;p&gt;
+&lt;a href=https://docs.pycom.io/chapter/datasheets/oem/S01.html&gt;DOCUMENTATION&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;Created by Roland van Straten, 30-07-2017, v1.0&lt;/p&gt;</description>
+<pin name="GND" x="40.64" y="-5.08" length="middle" rot="R180"/>
+<pin name="P12" x="40.64" y="-7.62" length="middle" rot="R180"/>
+<pin name="P11" x="40.64" y="-10.16" length="middle" rot="R180"/>
+<pin name="P10" x="40.64" y="-12.7" length="middle" rot="R180"/>
+<pin name="P9" x="40.64" y="-15.24" length="middle" rot="R180"/>
+<pin name="P8" x="40.64" y="-17.78" length="middle" rot="R180"/>
+<pin name="P7/NC" x="40.64" y="-20.32" length="middle" rot="R180"/>
+<pin name="P6/NC" x="40.64" y="-22.86" length="middle" rot="R180"/>
+<pin name="P5/NC" x="40.64" y="-25.4" length="middle" rot="R180"/>
+<pin name="P4" x="40.64" y="-27.94" length="middle" rot="R180"/>
+<pin name="P3" x="40.64" y="-30.48" length="middle" rot="R180"/>
+<pin name="P2" x="40.64" y="-33.02" length="middle" rot="R180"/>
+<pin name="P1" x="40.64" y="-35.56" length="middle" rot="R180"/>
+<pin name="P0" x="40.64" y="-38.1" length="middle" rot="R180"/>
+<pin name="RST" x="40.64" y="-40.64" length="middle" rot="R180"/>
+<pin name="GND@1" x="40.64" y="-43.18" length="middle" rot="R180"/>
+<pin name="GND@2" x="-5.08" y="-5.08" length="middle"/>
+<pin name="GND@3" x="-5.08" y="-7.62" length="middle"/>
+<pin name="P13" x="-5.08" y="-10.16" length="middle"/>
+<pin name="P14" x="-5.08" y="-12.7" length="middle"/>
+<pin name="P15" x="-5.08" y="-15.24" length="middle"/>
+<pin name="P16" x="-5.08" y="-17.78" length="middle"/>
+<pin name="P17" x="-5.08" y="-20.32" length="middle"/>
+<pin name="P18" x="-5.08" y="-22.86" length="middle"/>
+<pin name="P19" x="-5.08" y="-25.4" length="middle"/>
+<pin name="P20" x="-5.08" y="-27.94" length="middle"/>
+<pin name="P21" x="-5.08" y="-30.48" length="middle"/>
+<pin name="P22" x="-5.08" y="-33.02" length="middle"/>
+<pin name="P23" x="-5.08" y="-35.56" length="middle"/>
+<pin name="VDD33" x="-5.08" y="-38.1" length="middle"/>
+<pin name="GND@4" x="-5.08" y="-40.64" length="middle"/>
+<pin name="1V8" x="-5.08" y="-43.18" length="middle"/>
+<wire x1="0" y1="-48.26" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="35.56" y1="0" x2="35.56" y2="-48.26" width="0.254" layer="94"/>
+<pin name="GND@5" x="20.32" y="5.08" length="middle" rot="R270"/>
+<pin name="ANT" x="22.86" y="5.08" length="middle" rot="R270"/>
+<pin name="GND@6" x="25.4" y="5.08" length="middle" rot="R270"/>
+<text x="1.524" y="1.016" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-81.28" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="-48.26" x2="35.56" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-48.26" x2="35.56" y2="-78.74" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-78.74" x2="0" y2="-78.74" width="0.254" layer="94"/>
+<wire x1="0" y1="-78.74" x2="0" y2="-48.26" width="0.254" layer="94"/>
+<pin name="ANT2" x="20.32" y="-83.82" length="middle" rot="R90"/>
+<pin name="GND@8" x="22.86" y="-83.82" length="middle" rot="R90"/>
+<pin name="GND@7" x="17.78" y="-83.82" length="middle" rot="R90"/>
+<pin name="GND@16" x="40.64" y="-50.8" length="middle" rot="R180"/>
+<pin name="GND@15" x="40.64" y="-53.34" length="middle" rot="R180"/>
+<pin name="GND@14" x="40.64" y="-66.04" length="middle" rot="R180"/>
+<pin name="GND@13" x="40.64" y="-68.58" length="middle" rot="R180"/>
+<pin name="GND@12" x="-5.08" y="-68.58" length="middle"/>
+<pin name="GND@11" x="-5.08" y="-66.04" length="middle"/>
+<pin name="GND@10" x="-5.08" y="-53.34" length="middle"/>
+<pin name="GND@9" x="-5.08" y="-50.8" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PYCOM-L01-OEM" prefix="M" uservalue="yes">
+<description>&lt;b&gt;Pycom LoPy Module with LoRa, dual Bluetooth, WiFi based upon an ESP32 from Espressif&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="L01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="L01_OEM">
+<connects>
+<connect gate="G$1" pin="1V8" pad="1V8"/>
+<connect gate="G$1" pin="ANT" pad="ANT"/>
+<connect gate="G$1" pin="ANT2" pad="ANT2"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND@1" pad="GND@1"/>
+<connect gate="G$1" pin="GND@10" pad="GND@10"/>
+<connect gate="G$1" pin="GND@11" pad="GND@11"/>
+<connect gate="G$1" pin="GND@12" pad="GND@12"/>
+<connect gate="G$1" pin="GND@13" pad="GND@13"/>
+<connect gate="G$1" pin="GND@14" pad="GND@14"/>
+<connect gate="G$1" pin="GND@15" pad="GND@15"/>
+<connect gate="G$1" pin="GND@16" pad="GND@16"/>
+<connect gate="G$1" pin="GND@2" pad="GND@2"/>
+<connect gate="G$1" pin="GND@3" pad="GND@3"/>
+<connect gate="G$1" pin="GND@4" pad="GND@4"/>
+<connect gate="G$1" pin="GND@5" pad="GND@5"/>
+<connect gate="G$1" pin="GND@6" pad="GND@6"/>
+<connect gate="G$1" pin="GND@7" pad="GND@7"/>
+<connect gate="G$1" pin="GND@8" pad="GND@8"/>
+<connect gate="G$1" pin="GND@9" pad="GND@9"/>
+<connect gate="G$1" pin="P0" pad="P0"/>
+<connect gate="G$1" pin="P1" pad="P1"/>
+<connect gate="G$1" pin="P10" pad="P10"/>
+<connect gate="G$1" pin="P11" pad="P11"/>
+<connect gate="G$1" pin="P12" pad="P12"/>
+<connect gate="G$1" pin="P13" pad="P13"/>
+<connect gate="G$1" pin="P14" pad="P14"/>
+<connect gate="G$1" pin="P15" pad="P15"/>
+<connect gate="G$1" pin="P16" pad="P16"/>
+<connect gate="G$1" pin="P17" pad="P17"/>
+<connect gate="G$1" pin="P18" pad="P18"/>
+<connect gate="G$1" pin="P19" pad="P19"/>
+<connect gate="G$1" pin="P2" pad="P2"/>
+<connect gate="G$1" pin="P20" pad="P20"/>
+<connect gate="G$1" pin="P21" pad="P21"/>
+<connect gate="G$1" pin="P22" pad="P22"/>
+<connect gate="G$1" pin="P23" pad="P23"/>
+<connect gate="G$1" pin="P3" pad="P3"/>
+<connect gate="G$1" pin="P4" pad="P4"/>
+<connect gate="G$1" pin="P5/NC" pad="P5"/>
+<connect gate="G$1" pin="P6/NC" pad="P6"/>
+<connect gate="G$1" pin="P7/NC" pad="P7"/>
+<connect gate="G$1" pin="P8" pad="P8"/>
+<connect gate="G$1" pin="P9" pad="P9"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="VDD33" pad="VDD33"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PYCOM-W01-OEM" prefix="M" uservalue="yes">
+<description>&lt;b&gt;Pycom WiPy Module with dual Bluetooth, WiFi based upon an ESP32 from Espressif&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="W01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="W01_OEM">
+<connects>
+<connect gate="G$1" pin="1V8" pad="1V8"/>
+<connect gate="G$1" pin="ANT" pad="ANT"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND@1" pad="GND@1"/>
+<connect gate="G$1" pin="GND@2" pad="GND@2"/>
+<connect gate="G$1" pin="GND@3" pad="GND@3"/>
+<connect gate="G$1" pin="GND@4" pad="GND@4"/>
+<connect gate="G$1" pin="GND@5" pad="GND@5"/>
+<connect gate="G$1" pin="GND@6" pad="GND@6"/>
+<connect gate="G$1" pin="P0" pad="P0"/>
+<connect gate="G$1" pin="P1" pad="P1"/>
+<connect gate="G$1" pin="P10" pad="P10"/>
+<connect gate="G$1" pin="P11" pad="P11"/>
+<connect gate="G$1" pin="P12" pad="P12"/>
+<connect gate="G$1" pin="P13" pad="P13"/>
+<connect gate="G$1" pin="P14" pad="P14"/>
+<connect gate="G$1" pin="P15" pad="P15"/>
+<connect gate="G$1" pin="P16" pad="P16"/>
+<connect gate="G$1" pin="P17" pad="P17"/>
+<connect gate="G$1" pin="P18" pad="P18"/>
+<connect gate="G$1" pin="P19" pad="P19"/>
+<connect gate="G$1" pin="P2" pad="P2"/>
+<connect gate="G$1" pin="P20" pad="P20"/>
+<connect gate="G$1" pin="P21" pad="P21"/>
+<connect gate="G$1" pin="P22" pad="P22"/>
+<connect gate="G$1" pin="P23" pad="P23"/>
+<connect gate="G$1" pin="P3" pad="P3"/>
+<connect gate="G$1" pin="P4" pad="P4"/>
+<connect gate="G$1" pin="P5" pad="P5"/>
+<connect gate="G$1" pin="P6" pad="P6"/>
+<connect gate="G$1" pin="P7" pad="P7"/>
+<connect gate="G$1" pin="P8" pad="P8"/>
+<connect gate="G$1" pin="P9" pad="P9"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="VDD33" pad="VDD33"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PYCOM-S01-OEM" prefix="M" uservalue="yes">
+<description>&lt;b&gt;Pycom SiPy Module with Sigfox, dual Bluetooth, WiFi based upon an ESP32 from Espressif&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="S01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="S01_OEM">
+<connects>
+<connect gate="G$1" pin="1V8" pad="1V8"/>
+<connect gate="G$1" pin="ANT" pad="ANT"/>
+<connect gate="G$1" pin="ANT2" pad="ANT2"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND@1" pad="GND@1"/>
+<connect gate="G$1" pin="GND@10" pad="GND@10"/>
+<connect gate="G$1" pin="GND@11" pad="GND@11"/>
+<connect gate="G$1" pin="GND@12" pad="GND@12"/>
+<connect gate="G$1" pin="GND@13" pad="GND@13"/>
+<connect gate="G$1" pin="GND@14" pad="GND@14"/>
+<connect gate="G$1" pin="GND@15" pad="GND@15"/>
+<connect gate="G$1" pin="GND@16" pad="GND@16"/>
+<connect gate="G$1" pin="GND@2" pad="GND@2"/>
+<connect gate="G$1" pin="GND@3" pad="GND@3"/>
+<connect gate="G$1" pin="GND@4" pad="GND@4"/>
+<connect gate="G$1" pin="GND@5" pad="GND@5"/>
+<connect gate="G$1" pin="GND@6" pad="GND@6"/>
+<connect gate="G$1" pin="GND@7" pad="GND@7"/>
+<connect gate="G$1" pin="GND@8" pad="GND@8"/>
+<connect gate="G$1" pin="GND@9" pad="GND@9"/>
+<connect gate="G$1" pin="P0" pad="P0"/>
+<connect gate="G$1" pin="P1" pad="P1"/>
+<connect gate="G$1" pin="P10" pad="P10"/>
+<connect gate="G$1" pin="P11" pad="P11"/>
+<connect gate="G$1" pin="P12" pad="P12"/>
+<connect gate="G$1" pin="P13" pad="P13"/>
+<connect gate="G$1" pin="P14" pad="P14"/>
+<connect gate="G$1" pin="P15" pad="P15"/>
+<connect gate="G$1" pin="P16" pad="P16"/>
+<connect gate="G$1" pin="P17" pad="P17"/>
+<connect gate="G$1" pin="P18" pad="P18"/>
+<connect gate="G$1" pin="P19" pad="P19"/>
+<connect gate="G$1" pin="P2" pad="P2"/>
+<connect gate="G$1" pin="P20" pad="P20"/>
+<connect gate="G$1" pin="P21" pad="P21"/>
+<connect gate="G$1" pin="P22" pad="P22"/>
+<connect gate="G$1" pin="P23" pad="P23"/>
+<connect gate="G$1" pin="P3" pad="P3"/>
+<connect gate="G$1" pin="P4" pad="P4"/>
+<connect gate="G$1" pin="P5/NC" pad="P5"/>
+<connect gate="G$1" pin="P6/NC" pad="P6"/>
+<connect gate="G$1" pin="P7/NC" pad="P7"/>
+<connect gate="G$1" pin="P8" pad="P8"/>
+<connect gate="G$1" pin="P9" pad="P9"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="VDD33" pad="VDD33"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PYCOM-G01-OEM" prefix="M" uservalue="yes">
+<description>&lt;b&gt;Pycom GPy Module with LTE M1/NB1, dual Bluetooth, WiFi based upon an ESP32 from Espressif&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="G01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="G01_OEM">
+<connects>
+<connect gate="G$1" pin="+5V" pad="+5V"/>
+<connect gate="G$1" pin="1V8" pad="1V8"/>
+<connect gate="G$1" pin="ANT" pad="ANT"/>
+<connect gate="G$1" pin="ANT2" pad="ANT2"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND@1" pad="GND@1"/>
+<connect gate="G$1" pin="GND@10" pad="GND@10"/>
+<connect gate="G$1" pin="GND@11" pad="GND@11"/>
+<connect gate="G$1" pin="GND@12" pad="GND@12"/>
+<connect gate="G$1" pin="GND@13" pad="GND@13"/>
+<connect gate="G$1" pin="GND@14" pad="GND@14"/>
+<connect gate="G$1" pin="GND@15" pad="GND@15"/>
+<connect gate="G$1" pin="GND@16" pad="GND@16"/>
+<connect gate="G$1" pin="GND@17" pad="GND@17"/>
+<connect gate="G$1" pin="GND@2" pad="GND@2"/>
+<connect gate="G$1" pin="GND@3" pad="GND@3"/>
+<connect gate="G$1" pin="GND@4" pad="GND@4"/>
+<connect gate="G$1" pin="GND@5" pad="GND@5"/>
+<connect gate="G$1" pin="GND@6" pad="GND@6"/>
+<connect gate="G$1" pin="GND@7" pad="GND@7"/>
+<connect gate="G$1" pin="GND@8" pad="GND@8"/>
+<connect gate="G$1" pin="GND@9" pad="GND@9"/>
+<connect gate="G$1" pin="P0" pad="P0"/>
+<connect gate="G$1" pin="P1" pad="P1"/>
+<connect gate="G$1" pin="P10" pad="P10"/>
+<connect gate="G$1" pin="P11" pad="P11"/>
+<connect gate="G$1" pin="P12" pad="P12"/>
+<connect gate="G$1" pin="P13" pad="P13"/>
+<connect gate="G$1" pin="P14" pad="P14"/>
+<connect gate="G$1" pin="P15" pad="P15"/>
+<connect gate="G$1" pin="P16" pad="P16"/>
+<connect gate="G$1" pin="P17" pad="P17"/>
+<connect gate="G$1" pin="P18" pad="P18"/>
+<connect gate="G$1" pin="P19" pad="P19"/>
+<connect gate="G$1" pin="P2" pad="P2"/>
+<connect gate="G$1" pin="P20" pad="P20"/>
+<connect gate="G$1" pin="P21" pad="P21"/>
+<connect gate="G$1" pin="P22" pad="P22"/>
+<connect gate="G$1" pin="P23" pad="P23"/>
+<connect gate="G$1" pin="P3" pad="P3"/>
+<connect gate="G$1" pin="P4" pad="P4"/>
+<connect gate="G$1" pin="P5/NC" pad="P5"/>
+<connect gate="G$1" pin="P6/NC" pad="P6"/>
+<connect gate="G$1" pin="P7/NC" pad="P7"/>
+<connect gate="G$1" pin="P8" pad="P8"/>
+<connect gate="G$1" pin="P9" pad="P9"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="SIM_CLK" pad="SIM_CLK"/>
+<connect gate="G$1" pin="SIM_DATA" pad="SIM_DATA"/>
+<connect gate="G$1" pin="SIM_RESET" pad="SIM_RESET"/>
+<connect gate="G$1" pin="VDD33" pad="VDD33"/>
+<connect gate="G$1" pin="VSIM" pad="VSIM"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
