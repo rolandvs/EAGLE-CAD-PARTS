@@ -60,6 +60,8 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>&lt;b&gt;ImageCraft - CC3100 Wi-Fi chip with a STM32F411RCT6 micro-controller&lt;/b&gt;
+&lt;p&gt;Created by Roland van Straten (git@rolandvs) on 08-05-2017, v1.0&lt;/p&gt;</description>
 <packages>
 <package name="WIFI2GO">
 <description>&lt;b&gt;wifi2go&lt;/b&gt;

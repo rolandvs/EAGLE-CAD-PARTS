@@ -1,9 +1,29 @@
 # EAGLE CAD PARTS
 
-Date: `30-07-2017`<br>
+Date: `23-07-2017`<br>
 By: `Roland van Straten`
 
 In this repo you will find some usefull parts for use with `EAGLE`.
+
+## Linear Technology
+
+PART | PACKAGE
+----- | -----  
+LT1364CN | PDIP8  
+LT1364CS | SO08
+LT1365CN | PDIP14  
+LT1365CS | SO16
+ 
+
+## Texas Instruments
+
+PART | PACKAGE | PART | PACKAGE 
+----- | -----  | --- | ---
+TPS60400 | SOT23-5 | TPS60400-Q1 | SOT23-5
+TPS60401 | SOT23-5 | TPS60401-Q1 | SOT23-5
+TPS60402 | SOT23-5 | TPS60402-Q1 | SOT23-5
+TPS60403 | SOT23-5 | TPS60403-Q1 | SOT23-5
+
 
 ## Pycom OEM Modules
 This library is a collection of the [Pycom](http://pycom.io) OEM Modules that are based on the `ESP32` from [Espressif](http://www.espressif.com).

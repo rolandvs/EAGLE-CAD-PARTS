@@ -60,12 +60,9 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>&lt;b&gt;STM32L4x6xx&lt;/b&gt;
-
-&lt;p&gt;Ultra-low-power ARM Cortex M4 32-Bit MCU+FPU.&lt;/P&gt;
-&lt;p&gt;Two family members STM32L476 and STM32L496 with variants QFP64 (R) and QFP100 (V)&lt;/p&gt;
-
-Last update: 8-05-2017, @rolandvs</description>
+<description>&lt;b&gt;ST Microelectronics - STM32L4x6xx Ultra-low-power ARM Cortex M4 32-Bit MCU+FPU&lt;/b&gt;
+&lt;p&gt;Created by Roland van Straten (git@rolandvs) on 08-05-2017, v1.0&lt;/p&gt;
+&lt;p&gt;Two family members STM32L476 and STM32L496 with variants QFP64 (R) and QFP100 (V)&lt;/p&gt;</description>
 <packages>
 <package name="LQFP100_14X14">
 <description>&lt;b&gt;LQFP100 14x14mm&lt;/b&gt;</description>
