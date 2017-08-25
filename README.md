@@ -1,11 +1,20 @@
 # EAGLE CAD PARTS
 
-Date: `23-07-2017`<br>
+Date: `24-07-2017`<br>
 By: `Roland van Straten`
 
 In this repo you will find some usefull parts for use with `EAGLE`.
 
+## Murata
+Wireless Modules
+
+PART | PACKAGE
+----- | -----  
+MBN52832 | WSM-BL241-ADA-008  
+
+
 ## Linear Technology
+Operational Amplifiers
 
 PART | PACKAGE
 ----- | -----  
@@ -16,6 +25,7 @@ LT1365CS | SO16
  
 
 ## Texas Instruments
+Power Supplies
 
 PART | PACKAGE | PART | PACKAGE 
 ----- | -----  | --- | ---
@@ -38,16 +48,10 @@ S01 | Sigfox | WiFi | Bluetooth | BLE | Sigfox
 G01 | LTE M1/NB1 | WiFi | Bluetooth | BLE 
 
 
-## WIFI2GO
-`WIFI2GO` is a module from [ImageCraft](http://imagecraft.com) that is available with different processor options. However the part in this library is the `STM32L411RCT6`. The board also has a Texas Instruments `CC3100` Wi-Fi chip and integrated antenna. Please refer to the website of Imagecraft for further information on availability and pricing.
 
-MODULE | SIZE | CPU | Flash | SRAM | WiFi
------ | ----- | ----- | ----- | ----- | -----
-WIFI2GO | 46x36mm | STM32F411RCT6 | 256kB | 128kB | CC3100
+## STMicroelectronics 
+Micro-controllers
 
-
-
-## STM32L4xxx.lbr
 This file contains the following parts:
 
 PART | PACKAGE | SIZE | Flash | SRAM | FARNELL
@@ -68,6 +72,14 @@ STM32L476VGT6 | LQFP100 | 14x14mm | 1024kB | 320kB | 2725139
 
 
 ___The parts are interchangeable if the guidelines of STM are followed.___
+
+
+## WIFI2GO
+`WIFI2GO` is a module from [ImageCraft](http://imagecraft.com) that is available with different processor options. However the part in this library is the `STM32L411RCT6`. The board also has a Texas Instruments `CC3100` Wi-Fi chip and integrated antenna. Please refer to the website of Imagecraft for further information on availability and pricing.
+
+MODULE | SIZE | CPU | Flash | SRAM | WiFi
+----- | ----- | ----- | ----- | ----- | -----
+WIFI2GO | 46x36mm | STM32F411RCT6 | 256kB | 128kB | CC3100
 
 
 ### Disclaimer
